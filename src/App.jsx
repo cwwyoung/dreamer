@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [userText, setUserText] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [replacedText, setReplacedText] = useState(""); // Store replaced text in state
+  const [replacedText, setReplacedText] = useState("");
 
   function handleText(e) {
     setUserText(e.target.value);
@@ -15,7 +15,6 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
     setFormSubmitted(true);
-    // Calculate and set the replaced text here
     const updatedText = replaceText(userText, "fever dream", "weird thing");
     setReplacedText(updatedText);
   }
@@ -26,7 +25,7 @@ function App() {
 
   return (
     <>
-      <h1>THE RESISTING</h1>
+      <h1>RESISTING</h1>
       <h2>DREAMER</h2>
       <form onSubmit={handleSubmit}>
         <input

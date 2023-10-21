@@ -94,6 +94,7 @@ form {
   flex-direction: column;
   max-width: 16rem;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 button {
